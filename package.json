@@ -1,0 +1,30 @@
+{
+  "name": "node-rdw",
+  "version": "0.0.1",
+  "description": "NodeJS module to access the RDW Database, searching for Dutch license plate info",
+  "main": "index",
+  "keywords": [
+    "rdw",
+    "license plate",
+    "azure"
+  ],
+  "dependencies": {
+    "request" : "*",
+    "xml2js" : "*",
+    "underscore" : "*"
+  },
+  "devDependencies": {
+    "grunt": "latest",
+    "grunt-contrib-jshint": "latest",
+    "grunt-contrib-watch": "latest"
+  },
+  "engines": {
+    "node": "*"
+  },
+  "readmeFilename": "README.md",
+  "author": {
+    "name": "J.W. Lagendijk",
+    "email": "jwlagendijk@gmail.com"
+  },
+  "license": "MIT"
+}
