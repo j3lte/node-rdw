@@ -4,8 +4,8 @@ node-rdw
 NodeJS module to access the RDW Database, searching for Dutch license plate info
 
 ```js
-var RDW = require('node-rdw'),
-    rdwSearch = new RDW();
+var RDWSearch = require('node-rdw'),
+    rdwSearch = new RDWSearch();
 
 rdwSearch.searchPlate("1122XX", function (err, data) {
     if (err) {

@@ -18,6 +18,10 @@
     "grunt-contrib-jshint": "latest",
     "grunt-contrib-watch": "latest"
   },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/j3lte/node-rdw"
+  },
   "engines": {
     "node": "*"
   },
