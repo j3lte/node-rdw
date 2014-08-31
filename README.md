@@ -1,6 +1,8 @@
 node-rdw
 ===========
 
+[![NPM](https://nodei.co/npm/node-rdw.png?downloads=true&stars=true)](https://nodei.co/npm/node-rdw/)
+
 NodeJS module to access the RDW Database, searching for Dutch license plate info
 
 ```js
