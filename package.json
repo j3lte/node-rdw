@@ -1,6 +1,6 @@
 {
   "name": "node-rdw",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "description": "NodeJS module to access the RDW Database, searching for Dutch license plate info",
   "main": "index",
   "keywords": [
@@ -9,14 +9,15 @@
     "azure"
   ],
   "dependencies": {
-    "request" : "*",
-    "xml2js" : "*",
-    "underscore" : "*"
+    "request": "*",
+    "underscore": "*",
+    "q": "*"
   },
   "devDependencies": {
     "grunt": "latest",
     "grunt-contrib-jshint": "latest",
-    "grunt-contrib-watch": "latest"
+    "grunt-contrib-watch": "latest",
+    "jshint-stylish": "^0.4.0"
   },
   "repository": {
     "type": "git",
