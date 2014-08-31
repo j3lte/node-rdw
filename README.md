@@ -7,7 +7,8 @@ NodeJS module to access the RDW Database, searching for Dutch license plate info
 var RDWSearch = require('node-rdw'),
     rdwSearch = new RDWSearch();
 
-rdwSearch.searchPlate("1122XX", function (err, data) {
+// NORMAL SEARCH WITH CALLBACK
+rdwSearch.searchPlate('71ZXK6', function (err, data) {
     if (err) {
         console.log(err);
         return false;
@@ -16,15 +17,26 @@ rdwSearch.searchPlate("1122XX", function (err, data) {
     console.log(JSON.stringify(data, true, 4));
 });
 
+// SEARCH USING PROMISES
+rdwSearch
+    .searchPlateDeferred('71ZXK6')
+    .then(function (data) {
+        // succes
+        console.log(JSON.stringify(data, true, 4));
+    })
+    .fail(function (err) {
+        console.log(err);
+    });
 ```
 
 This module searches for Dutch license plate information. It returns either null (no vehicle found) or an object with the information in it. The database comes from the [Azure Marketplace](http://datamarket.azure.com/dataset/opendata.rdw/vrtg.open.data#schema), more information (in Dutch) can be found [here](http://www.rdw.nl/Zakelijk/Paginas/Open-data.aspx).
 
-Unfortunately the service does not output JSON, so I parse the ATOM10 XML output and create a JSON object.
+Update August, 2014. Thanks to [tvr3000](https://github.com/tvr3000) for reminding me that this service can also output JSON. Previous version parsed XML.
 
 ## Features
 
-* searchPlate : Search a license plate. Plate number is without dashes (So, searching for "11-22-XX" === "1122XX")
+* searchPlate : Search a license plate. Plate number is without dashes (So, searching for "71-ZXK-6" === "71ZXK6")
+* searchPlateDeferred : Search a license plate, Promise style
 
 ## Bugs / issues
 
