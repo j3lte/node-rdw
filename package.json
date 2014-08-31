@@ -1,6 +1,6 @@
 {
   "name": "node-rdw",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "NodeJS module to access the RDW Database, searching for Dutch license plate info",
   "main": "index",
   "keywords": [
