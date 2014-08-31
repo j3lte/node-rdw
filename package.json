@@ -9,9 +9,9 @@
     "azure"
   ],
   "dependencies": {
+    "q": "*",
     "request": "*",
-    "underscore": "*",
-    "q": "*"
+    "underscore": "*"
   },
   "devDependencies": {
     "grunt": "latest",
