@@ -1,3 +1,17 @@
+0.1.2 / 2014-09-02
+==================
+
+  * Creating a more abstract search method
+  * Fixing date parsing RegEx
+  * Replacing Underscore with Lodash
+  * Adding JSDoc to generate documentation, see [Documentation.md](https://github.com/j3lte/node-rdw/blob/master/Documentation.md)
+  * Adding more examples to README
+
+0.1.1 / 2014-08-31
+==================
+
+  * Fixing minor debugging code
+
 0.1.0 / 2014-08-31
 ==================
 

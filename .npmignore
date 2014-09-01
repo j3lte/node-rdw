@@ -3,6 +3,7 @@ docs/
 examples/
 support/
 test/
+out/
 test.js
 testing.js
 .DS_Store

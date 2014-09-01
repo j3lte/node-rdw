@@ -9,7 +9,7 @@ NodeJS module to access the RDW Database, searching for Dutch license plate info
 var RDWSearch = require('node-rdw'),
     rdwSearch = new RDWSearch();
 
-// NORMAL SEARCH WITH CALLBACK
+// NORMAL SEARCH WITH CALLBACK, THIS WILL BE DEPRECATED IN THE FUTURE
 rdwSearch.searchPlate('71ZXK6', function (err, data) {
     if (err) {
         console.log(err);
@@ -29,6 +29,15 @@ rdwSearch
     .fail(function (err) {
         console.log(err);
     });
+
+// SEARCH USING THE GENERAL SEARCH METHOD.
+rdwSearch.search("Kenteken eq '71ZXK6'")
+
+// SEARCH USING AN ARRAY. THIS WILL BE AN 'AND' SEARCH
+rdwSearch.search([
+    "Hoofdbrandstof eq 'DIESEL'",
+    "Catalogusprijs gt 10000"
+])
 ```
 
 This module searches for Dutch license plate information. It returns either null (no vehicle found) or an object with the information in it. The database comes from the [Azure Marketplace](http://datamarket.azure.com/dataset/opendata.rdw/vrtg.open.data#schema), more information (in Dutch) can be found [here](http://www.rdw.nl/Zakelijk/Paginas/Open-data.aspx).
@@ -37,8 +46,11 @@ Update August, 2014. Thanks to [tvr3000](https://github.com/tvr3000) for remindi
 
 ## Features
 
-* searchPlate : Search a license plate. Plate number is without dashes (So, searching for "71-ZXK-6" === "71ZXK6")
-* searchPlateDeferred : Search a license plate, Promise style
+Please check the methods for RDWSearch in [Documentation.md](https://github.com/j3lte/node-rdw/blob/master/Documentation.md). Only RDWSearch is exported, SearchUtils is used internally. Created the documentation using JSDoc. Use ```grunt build``` to create the documentation.
+
+## History
+
+The history of changes can be found in [History.md](https://github.com/j3lte/node-rdw/blob/master/History.md)
 
 ## Bugs / issues
 
@@ -66,3 +78,5 @@ IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY
 CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
 TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
 SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+    [1]: https://github.com/buildfirst/buildfirst/tree/master/ch02
