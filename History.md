@@ -1,4 +1,4 @@
-0.1.2 / 2014-09-02
+0.1.3 / 2014-09-02
 ==================
 
   * Creating a more abstract search method
