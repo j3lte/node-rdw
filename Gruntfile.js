@@ -36,6 +36,16 @@ module.exports = function (grunt) {
                 files : '<%= jshint.all %>',
                 tasks: ['jshint']
             }
+        },
+        simplemocha: {
+            options: {
+                globals: ['expect'],
+                timeout: 3000,
+                ignoreLeaks: false,
+                ui: 'bdd',
+                reporter: 'tap'
+            },
+            all: { src: ['tests/*.js'] }
         }
     });
 
@@ -43,11 +53,12 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-jsdoc-to-markdown');
     grunt.loadNpmTasks('grunt-contrib-jshint');
     grunt.loadNpmTasks('grunt-contrib-watch');
+    grunt.loadNpmTasks('grunt-simple-mocha');
 
     // Default task.
     grunt.registerTask('default', ['jshint']);
 
-    grunt.registerTask('test', ['jshint']);
+    grunt.registerTask('test', ['jshint', 'simplemocha']);
 
     grunt.registerTask('dev', ['jshint', 'watch']);
 

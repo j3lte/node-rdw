@@ -1,6 +1,6 @@
 {
   "name": "node-rdw",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "NodeJS module to access the RDW Database, searching for Dutch license plate info",
   "main": "index",
   "keywords": [
@@ -14,19 +14,24 @@
     "request": "*"
   },
   "devDependencies": {
-    "grunt": "latest",
-    "grunt-contrib-jshint": "latest",
-    "grunt-contrib-watch": "latest",
-    "grunt-jsdoc": "^0.5.7",
-    "grunt-jsdoc-to-markdown": "^0.4.1",
-    "jshint-stylish": "^0.4.0"
+    "chai": "*",
+    "grunt": "*",
+    "grunt-contrib-jshint": "*",
+    "grunt-contrib-watch": "*",
+    "grunt-jsdoc-to-markdown": "*",
+    "grunt-simple-mocha": "*",
+    "jshint-stylish": "*",
+    "nock": "*"
   },
   "repository": {
     "type": "git",
     "url": "git://github.com/j3lte/node-rdw"
   },
   "engines": {
-    "node": "*"
+    "node": "^0.10"
+  },
+  "scripts": {
+    "test": "mocha tests"
   },
   "readmeFilename": "README.md",
   "author": {

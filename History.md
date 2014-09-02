@@ -1,6 +1,11 @@
 0.1.3 / 2014-09-02
 ==================
 
+  * Adding first tests
+
+0.1.3 / 2014-09-02
+==================
+
   * Creating a more abstract search method
   * Fixing date parsing RegEx
   * Replacing Underscore with Lodash
