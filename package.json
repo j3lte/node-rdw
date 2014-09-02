@@ -1,6 +1,6 @@
 {
   "name": "node-rdw",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "NodeJS module to access the RDW Database, searching for Dutch license plate info",
   "main": "index",
   "keywords": [
@@ -21,7 +21,8 @@
     "grunt-jsdoc-to-markdown": "*",
     "grunt-simple-mocha": "*",
     "jshint-stylish": "*",
-    "nock": "*"
+    "nock": "*",
+    "mocha": "*"
   },
   "repository": {
     "type": "git",
