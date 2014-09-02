@@ -28,7 +28,7 @@ module.exports = function (grunt) {
             options: {
                 jshintrc : '.jshintrc',
                 reporter: require('jshint-stylish'),
-                force: true
+                force: false
             }
         },
         watch : {
@@ -46,6 +46,8 @@ module.exports = function (grunt) {
 
     // Default task.
     grunt.registerTask('default', ['jshint']);
+
+    grunt.registerTask('test', ['jshint']);
 
     grunt.registerTask('dev', ['jshint', 'watch']);
 
