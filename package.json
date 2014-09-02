@@ -32,7 +32,7 @@
     "node": "^0.10"
   },
   "scripts": {
-    "test": "make test"
+    "test": "./node_modules/.bin/mocha tests/*.js"
   },
   "readmeFilename": "README.md",
   "author": {
