@@ -31,9 +31,6 @@
   "engines": {
     "node": "^0.10"
   },
-  "scripts": {
-    "test": "mocha tests"
-  },
   "readmeFilename": "README.md",
   "author": {
     "name": "J.W. Lagendijk",
