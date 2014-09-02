@@ -21,8 +21,8 @@
     "grunt-jsdoc-to-markdown": "*",
     "grunt-simple-mocha": "*",
     "jshint-stylish": "*",
-    "nock": "*",
-    "mocha": "*"
+    "mocha": "*",
+    "nock": "*"
   },
   "repository": {
     "type": "git",
