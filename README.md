@@ -1,4 +1,4 @@
-node-rdw
+node-rdw [![Build Status](https://travis-ci.org/j3lte/node-rdw.svg?branch=master)](https://travis-ci.org/j3lte/node-rdw)
 ===========
 
 [![NPM](https://nodei.co/npm/node-rdw.png?downloads=true&stars=true)](https://nodei.co/npm/node-rdw/)
