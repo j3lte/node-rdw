@@ -1,3 +1,10 @@
+/*
+ * node-rdw
+ * https://github.com/j3lte/node-rdw
+ *
+ * Copyright (c) 2014 Jelte Lagendijk
+ * Licensed under the MIT license.
+ */
 'use strict';
 module.exports = function (grunt) {
     grunt.initConfig({
