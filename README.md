@@ -4,7 +4,7 @@ node-rdw
 [![NPM](https://nodei.co/npm/node-rdw.png?downloads=true&stars=true)](https://nodei.co/npm/node-rdw/)
 
 [![Build Status](https://travis-ci.org/j3lte/node-rdw.svg?branch=master)](https://travis-ci.org/j3lte/node-rdw)
-[![DAVID](https://david-dm.org/j3lte/node-rdw.png)](https://david-dm.org/j3lte/node-rdw)
+[![DAVID](https://david-dm.org/j3lte/node-rdw.svg)](https://david-dm.org/j3lte/node-rdw)
 [![npm version](https://badge.fury.io/js/node-rdw.svg)](http://badge.fury.io/js/node-rdw)
 [![Development Dependency Status](https://david-dm.org/j3lte/node-rdw/dev-status.svg?theme=shields.io)](https://david-dm.org/j3lte/node-rdw#info=devDependencies)
 [![Code Climate](https://codeclimate.com/github/j3lte/node-rdw/badges/gpa.svg)](https://codeclimate.com/github/j3lte/node-rdw)
